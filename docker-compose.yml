@@ -22,6 +22,6 @@ services:
       DJANGO_SETTINGS_MODULE: config.settings.dev
       DJANGO_SECRET_KEY: development
       DJANGO_DATABASE_URL: postgresql://chaospizza:chaospizza@db:5432/chaospizza
-    command: ./wait-for-db.sh python manage.py runserver 0.0.0.0:8000
+    command: ./wait-for-db.sh python manage.py runserver 0.0.0.0:5050
     ports:
-      - 8000:8000
+      - 5050:5050
